@@ -29,12 +29,16 @@ class App extends Component {
       <div className='App'>
         <div className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
-          <h2>Youssef teste</h2>
+          <h2>It's not lupus</h2>
         </div>
-        <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} />
-        <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} />
-        <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} />
-        <MainSlider frame={this.state.frame} totalFrames={this.state.totalFrames} setFrameHandler={this.setFrame} />
+        <div className='App-sidebar'>
+          <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} />
+          <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} />
+          <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} />
+        </div>
+        <div className='App-footer'>
+          <MainSlider frame={this.state.frame} totalFrames={this.state.totalFrames} setFrameHandler={this.setFrame} />
+        </div>
       </div>
     )
   }

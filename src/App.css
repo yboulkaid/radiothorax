@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .App-logo {
@@ -8,10 +11,20 @@
 }
 
 .App-header {
+  flex: 1 100%;
+
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
+}
+
+.App-sidebar {
+  flex: 1 auto;
+}
+
+.App-footer {
+  flex: 1 100%;
 }
 
 .App-intro {
