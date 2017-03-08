@@ -7,7 +7,7 @@ class MainSlider extends Component {
   render () {
     return (
       <div className='main-slider'>
-        Step {this.props.frame} / {this.props.totalFrames}
+        Frame {this.props.frame} / {this.props.totalFrames}
         <br />
 
         <Slider defaultValue={0}

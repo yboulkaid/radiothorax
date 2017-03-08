@@ -1,0 +1,20 @@
+.slice-view {
+  width: 20%;
+  position: relative;
+  margin: 10px;
+  height: 100px;
+  background-color: grey;
+}
+
+.slice-view__slice-number {
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.slice-view__progress-bar {
+  position: absolute;
+  border-top: 3px solid #7f1c39;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+}
