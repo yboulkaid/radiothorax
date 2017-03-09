@@ -1,0 +1,11 @@
+.detailed-slice {
+  background-color: #cde;
+  height: 80%;
+  width: 90%;
+  margin: 10px;
+}
+
+.detailed-slice__text {
+  font-size: 4em;
+  font-weight: lighter;
+}

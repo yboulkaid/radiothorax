@@ -20,11 +20,16 @@
 }
 
 .App-sidebar {
-  flex: 1 auto;
+  flex: 1;
 }
 
 .App-footer {
+  margin-top: 20px;
   flex: 1 100%;
+}
+
+.App-detailed-slice {
+  flex: 3;
 }
 
 .App-intro {
