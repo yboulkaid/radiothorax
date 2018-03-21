@@ -3,7 +3,7 @@ import './detailedSlice.css'
 
 class DetailedSlice extends Component {
   render () {
-    const frameImage = require(`../public/images/parench/parench-0${this.props.frame + 50}.JPG`)
+    const frameImage = require(`../public/images/parench/parench-${this.props.frame + 50}.JPG`)
     return (
       <div className='detailed-slice'>
         <p className='detailed-slice__text'>

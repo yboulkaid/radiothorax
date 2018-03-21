@@ -9,7 +9,11 @@ class SliceView extends Component {
         <p className='slice-view__slice-number'>
           Frame {this.props.frame}
         </p>
-        <div className='slice-view__progress-bar' style={{ height : percentage}}>
+        <div className='slice-view__image-container'>
+          <img src={this.props.image} className='slice-view__image' alt='my'/>
+
+          <div className='slice-view__progress-bar' style={{ height: percentage }}>
+        </div>
 
         </div>
       </div>

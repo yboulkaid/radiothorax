@@ -12,7 +12,7 @@ class App extends Component {
     this.setFrame = this.setFrame.bind(this)
     this.state = {
       frame: 0,
-      totalFrames: 100
+      totalFrames: 320
     }
   }
 
@@ -26,6 +26,9 @@ class App extends Component {
   }
 
   render () {
+    const sideView1 = require('../public/images/side/side-1.PNG')
+    const sideView2 = require('../public/images/side/side-2.PNG')
+
     return (
       <div className='App'>
         <div className='App-header'>
@@ -33,8 +36,8 @@ class App extends Component {
           <h2>It is not lupus</h2>
         </div>
         <div className='App-sidebar'>
-          <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} />
-          <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} />
+          <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} image={sideView1} />
+          <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} image={sideView2} />
         </div>
         <div className='App-detailed-slice'>
           <DetailedSlice frame={this.state.frame} />
