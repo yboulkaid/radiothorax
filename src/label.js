@@ -8,11 +8,11 @@ class Label extends Component {
     ctx.strokeStyle="#FFFFFF";
     ctx.fillStyle = 'white';
     ctx.beginPath();
-    ctx.moveTo(20,20);
-    ctx.lineTo(100,100);
+    ctx.moveTo(this.props.from.x,this.props.from.y);
+    ctx.lineTo(this.props.to.x,this.props.to.y);
     ctx.stroke();
     ctx.font = "12px Arial";
-    ctx.fillText("Hello World",10,22);
+    ctx.fillText(this.props.text ,this.props.from.x,this.props.from.y);
   }
 
   render () {

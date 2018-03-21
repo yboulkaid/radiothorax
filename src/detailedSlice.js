@@ -11,7 +11,7 @@ class DetailedSlice extends Component {
           Frame {this.props.frame}
         </p>
         <div className='detailed-slice__image-container'>
-          <Label />
+          <Label from={{x: 100, y: 100}} to={{x: 200, y: 200}} text='Organe 1'/>
           <img src={frameImage} className='detailed-slice__image' alt='my'/>
         </div>
       </div>
