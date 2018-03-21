@@ -13,8 +13,8 @@
 
 .slice-view__progress-bar {
   position: absolute;
-  border-top: 3px solid #7f1c39;
-  bottom: 0;
+  border-bottom: 3px solid #7f1c39;
+  top: 0;
   height: 50%;
   width: 100%;
 }
