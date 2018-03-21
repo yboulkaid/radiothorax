@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Label from './label.js'
 import './detailedSlice.css'
 
 class DetailedSlice extends Component {
@@ -10,6 +11,7 @@ class DetailedSlice extends Component {
           Frame {this.props.frame}
         </p>
         <div className='detailed-slice__image-container'>
+          <Label />
           <img src={frameImage} className='detailed-slice__image' alt='my'/>
         </div>
       </div>
