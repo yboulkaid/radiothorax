@@ -1,11 +1,23 @@
 .detailed-slice {
   background-color: #cde;
-  height: 80%;
   width: 90%;
   margin: 10px;
+  padding: 10px;
 }
 
 .detailed-slice__text {
   font-size: 4em;
   font-weight: lighter;
+}
+
+.detailed-slice__image-container {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.detailed-slice__image {
+  width: 100%;
+  margin-top: -34%;
 }
