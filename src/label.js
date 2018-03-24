@@ -1,24 +1,20 @@
 import React, { Component } from 'react'
 import './label.css'
+import { Layer, Line, Text } from 'react-konva';
+import Konva from 'konva';
 
 class Label extends Component {
-  componentDidMount() {
-    var c=document.getElementById("canvas");
-    var ctx=c.getContext("2d");
-    ctx.strokeStyle="#FFFFFF";
-    ctx.fillStyle = 'white';
-    ctx.beginPath();
-    ctx.moveTo(this.props.from.x,this.props.from.y);
-    ctx.lineTo(this.props.to.x,this.props.to.y);
-    ctx.stroke();
-    ctx.font = "12px Arial";
-    ctx.fillText(this.props.text ,this.props.from.x,this.props.from.y);
-  }
-
-  render () {
+  render() {
     return (
-      <canvas id='canvas' className='label'></canvas>
-    )
+      <Layer>
+        <Text text="Try click on rect" />
+        <Line
+          points = {[0, 0, 100, 200]}
+          stroke = {'red'}
+          strokeWidth = {1}
+        />
+      </Layer>
+    );
   }
 }
 
