@@ -12,7 +12,7 @@ class Label extends Component {
           y={this.props.from.y - 10}
           align={'left'}
           fontStyle={'bold'}
-          fill={'red'}
+          fill={this.props.color}
         />
         <Line
           points={[
@@ -21,7 +21,7 @@ class Label extends Component {
             this.props.to.x,
             this.props.to.y
           ]}
-          stroke={'red'}
+          stroke={this.props.color}
           strokeWidth={2}
         />
       </Layer>
