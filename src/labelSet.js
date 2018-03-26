@@ -6,17 +6,17 @@ class LabelSet extends Component {
     return this.props.frame >= frameStart && this.props.frame <= frameEnd
   }
 
-  organs () {
+  organs (fileName) {
     const csvParse = require('csv-parse/lib/sync');
-    const organList = require(`../public/captions/${this.props.fileName}`)
+    const organList = require(`../public/captions/${fileName}`)
     const base64File = organList.split(',')[1]
     const decodedCsv = atob(base64File)
     const organs = csvParse(decodedCsv, {delimiter: ';', columns: true})
     return organs
   }
 
-  organLabels () {
-    return this.organs().map((organ) => {
+  organLabels (fileName) {
+    return this.organs(fileName).map((organ) => {
       if (this.isVisibleFor(organ.frameStart, organ.frameEnd)) {
         return (
           <Label
@@ -32,7 +32,7 @@ class LabelSet extends Component {
 
   render () {
     return (
-      this.organLabels()
+      this.organLabels(this.props.fileName)
     )
   }
 }
