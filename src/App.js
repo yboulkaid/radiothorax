@@ -3,6 +3,7 @@ import logo from './logo.svg'
 import MainSlider from './mainSlider.js'
 import SliceView from './sliceView.js'
 import DetailedSlice from './detailedSlice.js'
+import LabelSelector from './labelSelector.js'
 import './App.css'
 import './index.css'
 
@@ -10,9 +11,11 @@ class App extends Component {
   constructor () {
     super()
     this.setFrame = this.setFrame.bind(this)
+    this.setCaption = this.setCaption.bind(this)
     this.state = {
       frame: 0,
-      totalFrames: 320
+      totalFrames: 320,
+      caption: 'set1'
     }
   }
 
@@ -20,7 +23,18 @@ class App extends Component {
     this.setState(
       {
         frame: frame,
-        totalFrames: this.state.totalFrames
+        totalFrames: this.state.totalFrames,
+        caption: this.state.caption
+      }
+    )
+  }
+
+  setCaption (caption) {
+    this.setState(
+      {
+        frame: this.state.frame,
+        totalFrames: this.state.totalFrames,
+        caption: caption
       }
     )
   }
@@ -40,10 +54,11 @@ class App extends Component {
           <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} image={sideView2} />
         </div>
         <div className='App-detailed-slice'>
-          <DetailedSlice frame={this.state.frame} />
+          <DetailedSlice frame={this.state.frame} captionSet={this.state.caption} />
         </div>
         <div className='App-footer'>
           <MainSlider frame={this.state.frame} totalFrames={this.state.totalFrames} setFrameHandler={this.setFrame} />
+          <LabelSelector selectedValue='orange' setCaptionHandler={this.setCaption}/>
         </div>
       </div>
     )

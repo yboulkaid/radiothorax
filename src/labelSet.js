@@ -3,7 +3,7 @@ import Label from './label.js'
 
 class LabelSet extends Component {
   isVisibleFor (frameStart, frameEnd) {
-    return this.props.frame >= frameStart && this.props.frame <= frameEnd
+    return this.props.visible && this.props.frame >= frameStart && this.props.frame <= frameEnd
   }
 
   organs (fileName) {
