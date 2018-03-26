@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
 import Label from './label.js'
 
-const csvParse = require('csv-parse/lib/sync');
-const organList = require('../public/captions/organes.csv')
-const base64File = organList.split(',')[1]
-const decodedCsv = atob(base64File)
-const organs = csvParse(decodedCsv, {delimiter: ';', columns: true})
-
 class LabelSet extends Component {
   isVisibleFor (frameStart, frameEnd) {
     return this.props.frame >= frameStart && this.props.frame <= frameEnd
   }
 
+  organs () {
+    const csvParse = require('csv-parse/lib/sync');
+    const organList = require(`../public/captions/${this.props.fileName}`)
+    const base64File = organList.split(',')[1]
+    const decodedCsv = atob(base64File)
+    const organs = csvParse(decodedCsv, {delimiter: ';', columns: true})
+    return organs
+  }
+
   organLabels () {
-    return organs.map((organ) => {
+    return this.organs().map((organ) => {
       if (this.isVisibleFor(organ.frameStart, organ.frameEnd)) {
         return (
           <Label

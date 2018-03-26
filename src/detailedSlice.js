@@ -14,7 +14,11 @@ class DetailedSlice extends Component {
         <div className='detailed-slice__image-container'>
           <img src={frameImage} className='detailed-slice__image' alt='my'/>
           <Stage width={500} height={500} className='label'>
-            <LabelSet frame={this.props.frame} color='red'/>
+            <LabelSet
+              frame={this.props.frame}
+              color='red'
+              fileName='organes.csv'
+            />
           </Stage>
         </div>
       </div>
