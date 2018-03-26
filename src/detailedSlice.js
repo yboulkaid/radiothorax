@@ -19,6 +19,11 @@ class DetailedSlice extends Component {
               color='red'
               fileName='organes.csv'
             />
+            <LabelSet
+              frame={this.props.frame}
+              color='yellow'
+              fileName='organes2.csv'
+            />
           </Stage>
         </div>
       </div>
