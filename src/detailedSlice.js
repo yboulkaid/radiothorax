@@ -4,7 +4,7 @@ import { Stage } from 'react-konva';
 import './detailedSlice.css'
 
 const csvParse = require('csv-parse/lib/sync');
-const organList = require('../public/organes.csv')
+const organList = require('../public/captions/organes.csv')
 const base64File = organList.split(',')[1]
 const decodedCsv = atob(base64File)
 const organs = csvParse(decodedCsv, {delimiter: ';', columns: true})
