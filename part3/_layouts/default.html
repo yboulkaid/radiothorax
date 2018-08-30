@@ -5,13 +5,12 @@
   <meta charset="utf-8">
 
   <title>Menu</title>
+  <link rel="stylesheet" href="{{- 'assets/svg-stylesheet.css' | relative_url -}}" />
 </head>
 
 <body>
   <h1 class="title">Menu</h1>
-  <object type="image/svg+xml" data="/assets/Mehdi-v2.svg">
-    Your browser does not support SVG
-  </object>
+  {% include Mehdi-v2.svg %}
   {{ content }}
 
   {% for item in site.body_parts %}
