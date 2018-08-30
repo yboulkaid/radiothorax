@@ -10,13 +10,17 @@
 
 <body>
   <h1 class="title">Menu</h1>
-  {% include Mehdi-v2.svg %}
+  <hr />
+  <div class="schema">
+    {% include Mehdi-v2.svg %}
+  </div>
+  <hr />
   {{ content }}
 
   {% for item in site.body_parts %}
     <h2>{{ item.title }}</h2>
     <p>{{ item.description }}</p>
     <p><a href="{{ item.url }}">{{ item.title }}</a></p>
-    {% endfor %}
+  {% endfor %}
 </body>
 </html>
