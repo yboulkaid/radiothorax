@@ -10,10 +10,10 @@
   <a xlink:href="/body_parts/arbre_tracheo_bronchique">
     <text transform="matrix(1 0 0 1 7.3975 81.0234)" class='menu-caption'>Arbre tracheo-bronchique</text>
   </a>
-  <text transform="matrix(1 0 0 1 314.8066 101.75)" class='menu-caption'>Anatomie</text>
+  <text transform="matrix(1 0 0 1 314.8066 101.75)" class='menu-head-caption'>Anatomie</text>
 	<text transform="matrix(1 0 0 1 67.3506 122.5469)" class='menu-caption'>Poumons et plèvres</text>
 	<text transform="matrix(1 0 0 1 161.9399 164.0703)" class='menu-caption'>Médiastin</text>
-	<text transform="matrix(1 0 0 1 581.7285 100.75)" class='menu-caption'>Radioanatomie</text>
+	<text transform="matrix(1 0 0 1 581.7285 100.75)" class='menu-head-caption'>Radioanatomie</text>
 	<text transform="matrix(1 0 0 1 793.7842 27.166)" class='menu-caption'>Radiographie standard</text>
 	<text transform="matrix(1 0 0 1 803.8135 68.208)" class='menu-caption'>TDM</text>
 	<text transform="matrix(1 0 0 1 812.8711 92.7363)" class='menu-caption'>IRM</text>

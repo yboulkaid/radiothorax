@@ -16,8 +16,14 @@ body {
   font-size: 14px;
 }
 
+.menu-head-caption {
+  font-family: 'Verdana';
+  font-weight: bold;
+}
+
 .menu-caption:hover {
   cursor: pointer;
+  text-decoration: underline;
   fill: #00A99D;
   font-size: 16px;
 }
