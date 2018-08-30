@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "Thorax 1"
+layout: default
+title:  "Mediastin"
 date:   2018-08-30 16:35:41 +0200
 categories: thorax
 ---
@@ -11,3 +11,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quamquam te quidem vide
 
 Duo Reges: constructio interrete. Quamquam haec quidem praeposita recte et reiecta dicere licebit. Hoc non est positum in nostra actione. Vitiosum est enim in dividendo partem in genere numerare. Aut haec tibi, Torquate, sunt vituperanda aut patrocinium voluptatis repudiandum. Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus; Eam stabilem appellas. Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur. Aliud igitur esse censet gaudere, aliud non dolere. Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L.
 
+test

@@ -9,9 +9,15 @@
 
 <body>
   <h1 class="title">Menu</h1>
-  <object type="image/svg+xml" data="assets/Mehdi-v2.svg">
+  <object type="image/svg+xml" data="/assets/Mehdi-v2.svg">
     Your browser does not support SVG
   </object>
   {{ content }}
+
+  {% for item in site.body_parts %}
+    <h2>{{ item.title }}</h2>
+    <p>{{ item.description }}</p>
+    <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+    {% endfor %}
 </body>
 </html>

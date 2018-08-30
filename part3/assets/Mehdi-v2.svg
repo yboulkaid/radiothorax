@@ -6,9 +6,9 @@
 	 y="0px" width="1280px" height="800px" viewBox="0 0 1280 800" enable-background="new 0 0 1280 800" xml:space="preserve">
 <image overflow="visible" width="1024" height="683" xlink:href="background.jpg"  transform="matrix(0.3159 0 0 0.3159 533.333 279.0615)">
 </image>
-<g>
-	<text transform="matrix(1 0 0 1 249.1162 351.875)" class="blue" font-family="'Arial-BoldMT'" font-size="16">La cage thoracique</text>
-</g>
+<a xlink:href="/body_parts/mediastin">
+  <text transform="matrix(1 0 0 1 249.1162 351.875)" class="blue" font-family="'Arial-BoldMT'" font-size="16">La cage thoracique</text>
+</a>
 <g>
 	<text transform="matrix(1 0 0 1 436.3066 401.25)" class="blue" font-family="'Arial-BoldMT'" font-size="16">Anatomie</text>
 </g>
