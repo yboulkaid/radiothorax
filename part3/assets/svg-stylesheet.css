@@ -1,0 +1,23 @@
+.title {
+  text-align: center;
+}
+
+.blue {
+  fill: #00A99D;
+  transition: fill 0.5s, font-size 0.5s;
+  font-size: 12pt;
+}
+
+text.blue:hover {
+  cursor: pointer;
+  fill: darkblue;
+  font-size: 14pt;
+}
+
+.red {
+  fill: red;
+}
+
+text {
+  fill: white;
+}
