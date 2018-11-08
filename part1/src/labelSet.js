@@ -7,7 +7,7 @@ class LabelSet extends Component {
   }
 
   organs (fileName) {
-    const csvParse = require('csv-parse/lib/sync');
+    const csvParse = require('csv-parse/lib/es5/sync');
     const organList = require(`../public/captions/${fileName}`)
     const base64File = organList.split(',')[1]
     const decodedCsv = atob(base64File)
