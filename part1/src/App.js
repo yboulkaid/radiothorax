@@ -40,8 +40,8 @@ class App extends Component {
   }
 
   render () {
-    const sideView1 = require('../public/images/side/side-1.PNG')
-    const sideView2 = require('../public/images/side/side-2.PNG')
+    const sideView1 = require('../public/images/side/side-1.jpg')
+    const sideView2 = require('../public/images/side/side-2.jpg')
 
     return (
       <div className='App'>
