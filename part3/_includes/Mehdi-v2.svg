@@ -14,7 +14,9 @@
 	<text transform="matrix(1 0 0 1 67.3506 122.5469)" class='menu-caption'>Poumons et plèvres</text>
 	<text transform="matrix(1 0 0 1 161.9399 164.0703)" class='menu-caption'>Médiastin</text>
 	<text transform="matrix(1 0 0 1 581.7285 100.75)" class='menu-head-caption'>Radioanatomie</text>
-	<text transform="matrix(1 0 0 1 793.7842 27.166)" class='menu-caption'>Radiographie standard</text>
+  <a xlink:href="/radio/radiographie_standard.html">
+    <text transform="matrix(1 0 0 1 793.7842 27.166)" class='menu-caption'>Radiographie standard</text>
+    </a>
 	<text transform="matrix(1 0 0 1 803.8135 68.208)" class='menu-caption'>TDM</text>
 	<text transform="matrix(1 0 0 1 812.8711 92.7363)" class='menu-caption'>IRM</text>
 	<text transform="matrix(1 0 0 1 802.3438 124.7861)" class='menu-caption'>Echographie</text>

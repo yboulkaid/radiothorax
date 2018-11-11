@@ -33,6 +33,8 @@ plugins:
 collections:
   body_parts:
     ouput: true
+  radio:
+    ouput: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
