@@ -8,21 +8,11 @@ class Label extends Component {
       <Layer>
         <Text
           text={this.props.text}
-          x={this.props.from.x - 50}
-          y={this.props.from.y - 10}
+          x={Math.floor(this.props.from.x) - 600}
+          y={Math.floor(this.props.from.y) - 500}
           align={'left'}
           fontStyle={'bold'}
           fill={this.props.color}
-        />
-        <Line
-          points={[
-            this.props.from.x,
-            this.props.from.y,
-            this.props.to.x,
-            this.props.to.y
-          ]}
-          stroke={this.props.color}
-          strokeWidth={2}
         />
       </Layer>
     );

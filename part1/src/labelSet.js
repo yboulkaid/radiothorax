@@ -3,7 +3,8 @@ import Label from './label.js'
 
 class LabelSet extends Component {
   isVisibleFor (frameStart, frameEnd) {
-    return this.props.visible && this.props.frame >= frameStart && this.props.frame <= frameEnd
+    return true
+    // return this.props.visible && this.props.frame >= frameStart && this.props.frame <= frameEnd
   }
 
   organs (fileName) {
@@ -16,14 +17,15 @@ class LabelSet extends Component {
   }
 
   organLabels (fileName) {
+    // console.log()
     return this.organs(fileName).map((organ) => {
       if (this.isVisibleFor(organ.frameStart, organ.frameEnd)) {
         return (
           <Label
-            key={organ.organe}
-            from={{x: organ.labelX, y: organ.labelY}}
+            key={organ.label}
+            from={{x: organ.x, y: organ.y}}
             to={{x: organ.x, y: organ.y}}
-            text={organ.organe}
+            text={organ.label}
             color={this.props.color}/>
         )
       }
