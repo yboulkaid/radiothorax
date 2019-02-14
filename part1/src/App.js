@@ -39,6 +39,24 @@ class App extends Component {
     )
   }
 
+  componentDidMount () {
+    document.getElementById('scrollable').addEventListener(
+      'wheel', (event) => { this.reactToScrollWheel(event) }
+      , { capture: false, passive: false });
+  }
+
+  reactToScrollWheel (event) {
+    var newFrame = this.state.frame
+    if (event.deltaY > 0) {
+      newFrame = Math.max(this.state.frame - 1, 0)
+    } else {
+      newFrame = Math.min(this.state.frame + 1, 58)
+    }
+    this.setFrame(newFrame)
+    console.log(this.state.frame)
+    event.preventDefault();
+  }
+
   render () {
     const sideView1 = require('../public/images/side/side-1.jpg')
     const sideView2 = require('../public/images/side/side-2.jpg')

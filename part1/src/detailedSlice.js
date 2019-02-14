@@ -11,7 +11,7 @@ class DetailedSlice extends Component {
         <p className='detailed-slice__text'>
           Frame {this.props.frame}
         </p>
-        <div className='detailed-slice__image-container'>
+        <div className='detailed-slice__image-container' id='scrollable'>
           <img src={frameImage} className='detailed-slice__image' alt='my'/>
           <Stage width={500} height={500} className='label'>
             <LabelSet
