@@ -14,7 +14,7 @@ class App extends Component {
     this.setCaption = this.setCaption.bind(this)
     this.state = {
       frame: 0,
-      totalFrames: 58,
+      totalFrames: 72,
       caption: 'set1'
     }
   }
@@ -50,7 +50,7 @@ class App extends Component {
     if (event.deltaY > 0) {
       newFrame = Math.max(this.state.frame - 1, 0)
     } else {
-      newFrame = Math.min(this.state.frame + 1, 58)
+      newFrame = Math.min(this.state.frame + 1, this.state.totalFrames)
     }
     this.setFrame(newFrame)
     console.log(this.state.frame)

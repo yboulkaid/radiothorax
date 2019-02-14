@@ -5,7 +5,8 @@ import './detailedSlice.css'
 
 class DetailedSlice extends Component {
   render () {
-    const frameImage = require(`../public/images/parench/parench-${this.props.frame + 1}.jpg`)
+    var imageIndex = ('00000' + this.props.frame).substr(-5, 5);
+    const frameImage = require(`../public/images/boneAx/OsAx_${imageIndex}.png`)
     return (
       <div className='detailed-slice'>
         <p className='detailed-slice__text'>
