@@ -18,12 +18,15 @@ class LabelSet extends Component {
 
   organLabels (fileName) {
     return this.organs(fileName).map((organ) => {
+      let scaleFactor = 2
+      let scaledX = Math.round(organ.x / scaleFactor)
+      let scaledY = Math.round(organ.y / scaleFactor)
       if (this.isVisibleFor(organ.frameStart, organ.frameEnd)) {
         return (
           <Label
             key={organ.label}
-            from={{x: organ.x, y: organ.y}}
-            to={{x: organ.x, y: organ.y}}
+            from={{x: scaledX, y: scaledY}}
+            to={{x: scaledX, y: scaledY}}
             text={organ.label}
             color={this.props.color}/>
         )

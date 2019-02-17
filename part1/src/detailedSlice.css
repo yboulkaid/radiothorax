@@ -19,5 +19,11 @@
 }
 
 .detailed-slice__image {
-  width: 100%;
+  /* Half the original size */
+  width: 625px;
+  height: 440px;
+
+  position: absolute;
+  left: 0;
+  top: 0
 }
