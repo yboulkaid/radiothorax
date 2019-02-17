@@ -6,11 +6,6 @@
   padding: 10px;
 }
 
-.slice-view__slice-number {
-  font-size: 2em;
-  font-weight: lighter;
-}
-
 .slice-view__progress-bar {
   position: absolute;
   border-bottom: 3px solid #7f1c39;

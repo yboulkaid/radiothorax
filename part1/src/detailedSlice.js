@@ -8,9 +8,6 @@ class DetailedSlice extends Component {
     const frameImage = require(`../public/images/boneAx/OsAx_${imageIndex}.jpg`)
     return (
       <div className='detailed-slice'>
-        <p className='detailed-slice__text'>
-          Frame {this.props.frame}
-        </p>
         <div className='detailed-slice__image-container' id='scrollable'>
           <img src={frameImage} className='detailed-slice__image' alt='my'/>
           <LabelSet
