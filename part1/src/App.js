@@ -53,7 +53,6 @@ class App extends Component {
       newFrame = Math.min(this.state.frame + 1, this.state.totalFrames)
     }
     this.setFrame(newFrame)
-    console.log(this.state.frame)
     event.preventDefault();
   }
 

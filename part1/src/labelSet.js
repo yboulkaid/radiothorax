@@ -3,8 +3,8 @@ import Label from './label.js'
 
 class LabelSet extends Component {
   isVisibleFor (frameStart, frameEnd) {
-    return true
-    // return this.props.visible && this.props.frame >= frameStart && this.props.frame <= frameEnd
+    frameEnd += 1 // Because of weird data input?
+    return this.props.visible && this.props.frame >= frameStart && this.props.frame <= frameEnd
   }
 
   organs (fileName) {
@@ -17,7 +17,6 @@ class LabelSet extends Component {
   }
 
   organLabels (fileName) {
-    // console.log()
     return this.organs(fileName).map((organ) => {
       if (this.isVisibleFor(organ.frameStart, organ.frameEnd)) {
         return (
@@ -28,6 +27,8 @@ class LabelSet extends Component {
             text={organ.label}
             color={this.props.color}/>
         )
+      } else {
+        return []
       }
     })
   }
