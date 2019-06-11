@@ -14,7 +14,7 @@ class App extends Component {
     this.setCaption = this.setCaption.bind(this)
     this.state = {
       frame: 0,
-      totalFrames: 72,
+      totalFrames: 70,
       caption: 'set1'
     }
   }
