@@ -55,8 +55,8 @@ class Viewer extends Component {
   }
 
   render () {
-    const sideView1 = require('../public/images/radio/BoneAxial/sides/side-1.jpg')
-    const sideView2 = require('../public/images/radio/BoneAxial/sides/side-2.jpg')
+    const sideView1 = require(`../public/images/radio/${this.props.imageSet}/sides/side-1.jpg`)
+    const sideView2 = require(`../public/images/radio/${this.props.imageSet}/sides/side-2.jpg`)
 
     return (
       <div className='App-viewer'>
@@ -66,7 +66,7 @@ class Viewer extends Component {
         </div>
 
         <div className='App-detailed-slice'>
-          <DetailedSlice frame={this.state.frame} captionSet={this.state.caption} />
+          <DetailedSlice frame={this.state.frame} captionSet={this.state.caption} imageSet={this.props.imageSet}/>
         </div>
 
         <div className='App-footer'>

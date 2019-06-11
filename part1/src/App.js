@@ -10,7 +10,9 @@ class App extends Component {
         <div className='App-header'>
           <h2>Visionneuse de radioanatomie</h2>
         </div>
-        <Viewer />
+        <Viewer imageSet='BoneAxial'/>
+        <Viewer imageSet='BoneCoronal'/>
+        <Viewer imageSet='BoneSagittal'/>
 
       </div>
     )

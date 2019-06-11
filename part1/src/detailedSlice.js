@@ -5,7 +5,7 @@ import './detailedSlice.css'
 class DetailedSlice extends Component {
   render () {
     var imageIndex = ('00000' + this.props.frame).substr(-5, 5);
-    const frameImage = require(`../public/images/radio/BoneAxial/${imageIndex}.jpg`)
+    const frameImage = require(`../public/images/radio/${this.props.imageSet}/${imageIndex}.jpg`)
     return (
       <div className='detailed-slice'>
         <div className='detailed-slice__image-container' id='scrollable'>
