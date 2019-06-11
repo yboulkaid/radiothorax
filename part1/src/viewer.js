@@ -66,6 +66,7 @@ class Viewer extends Component {
         </div>
 
         <div className='App-detailed-slice'>
+          <h2> {this.props.title} </h2>
           <DetailedSlice frame={this.state.frame} captionSet={this.state.caption} imageSet={this.props.imageSet}/>
         </div>
 
