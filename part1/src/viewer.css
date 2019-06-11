@@ -1,0 +1,6 @@
+.App-viewer {
+  text-align: center;
+
+  display: flex;
+  flex-flow: row wrap;
+}
