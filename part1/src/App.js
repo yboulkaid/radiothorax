@@ -28,6 +28,7 @@ class App extends Component {
             file: 'BoneCoro/OsCoro.csv',
           },
         ],
+        sliderOrientations: ['vertical', 'horizontal'],
       },
       {
         imageSet: 'BoneAxial',
@@ -47,6 +48,7 @@ class App extends Component {
             file: 'BoneAx/Os.csv',
           },
         ],
+        sliderOrientations: ['vertical', 'vertical'],
       },
       {
         imageSet: 'BoneSagittal',
@@ -70,12 +72,19 @@ class App extends Component {
             file: 'BoneSag/OsSag.csv',
           },
         ],
+        sliderOrientations: ['horizontal', 'horizontal'],
       },
     ]
 
     const viewers = dataSet.map(
       (set) => (
-        <Viewer imageSet={set.imageSet} title={set.title} defaultCaption={set.defaultCaption} captions={set.captions}/>
+        <Viewer
+          imageSet={set.imageSet}
+          title={set.title}
+          defaultCaption={set.defaultCaption}
+          captions={set.captions}
+          sliderOrientations={set.sliderOrientations}
+        />
       )
     )
 

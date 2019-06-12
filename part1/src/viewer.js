@@ -61,8 +61,18 @@ class Viewer extends Component {
     return (
       <div className='App-viewer'>
         <div className='App-sidebar'>
-          <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} image={sideView1} />
-          <SliceView frame={this.state.frame} totalFrames={this.state.totalFrames} image={sideView2} />
+          <SliceView
+            frame={this.state.frame}
+            totalFrames={this.state.totalFrames}
+            image={sideView1}
+            orientation={this.props.sliderOrientations[0]}
+          />
+          <SliceView
+            frame={this.state.frame}
+            totalFrames={this.state.totalFrames}
+            image={sideView2}
+            orientation={this.props.sliderOrientations[1]}
+          />
         </div>
 
         <div className='App-detailed-slice'>
