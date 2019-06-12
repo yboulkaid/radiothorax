@@ -10,8 +10,7 @@ class DetailedSlice extends Component {
             frame={this.props.frame}
             color='red'
             fileName={labelFile}
-            visible={true}
-            // {this.props.captionSet === 'rouge'}
+            visible={this.props.captionSet === labelFile}
           />
       )
     )

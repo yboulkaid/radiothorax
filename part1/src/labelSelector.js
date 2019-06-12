@@ -23,8 +23,8 @@ class LabelSelector extends Component {
     const optionRadios = this.props.options.map(
       (option) => (
         <div>
-          <Radio value={option} />
-          <label> {option} </label>
+          <Radio value={option.file} />
+          <label> {option.title} </label>
         </div>
       )
     )

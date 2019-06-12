@@ -9,7 +9,7 @@ class App extends Component {
       {
         imageSet: 'BoneCoronal',
         title: 'BoneCoronal',
-        defaultCaption: 'Articulations',
+        defaultCaption: 'BoneCoro/Articulations.csv',
         captions: [
           {
             title: 'Articulations',
