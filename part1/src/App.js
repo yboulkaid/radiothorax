@@ -83,8 +83,8 @@ class App extends Component {
       <div className='App'>
         <div className='App-header'>
           <h2>Visionneuse de radioanatomie</h2>
-          {viewers}
         </div>
+        {viewers}
 
 
       </div>
