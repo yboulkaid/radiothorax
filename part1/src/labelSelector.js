@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import {RadioGroup, Radio} from 'react-radio-group'
 
 class LabelSelector extends Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.handleChange = this.handleChange.bind(this)
     this.state = {
-      selectedValue: 'rouge'
+      selectedValue: this.props.selectedValue
     }
   }
 
@@ -30,7 +30,7 @@ class LabelSelector extends Component {
     )
 
     return (
-      <RadioGroup name={Math.floor(Math.random()*1000)} selectedValue={this.state.selectedValue} onChange={this.handleChange}>
+      <RadioGroup name={Math.floor(Math.random()*1000).toString()} selectedValue={this.props.selectedValue} onChange={this.handleChange}>
         {optionRadios}
       </RadioGroup>
     )
