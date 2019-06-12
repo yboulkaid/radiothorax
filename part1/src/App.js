@@ -32,14 +32,44 @@ class App extends Component {
       {
         imageSet: 'BoneAxial',
         title: 'BoneAxial',
-        captions: ['vert', 'bleu'],
-        defaultCaption: 'bleu',
+        defaultCaption: 'BoneAx/Articulations.csv',
+        captions: [
+          {
+            title: 'Articulations',
+            file: 'BoneAx/Articulations.csv',
+          },
+          {
+            title: 'Cartillage',
+            file: 'BoneAx/Cartilage.csv',
+          },
+          {
+            title: 'Os',
+            file: 'BoneAx/Os.csv',
+          },
+        ],
       },
       {
         imageSet: 'BoneSagittal',
         title: 'BoneSagittal',
-        defaultCaption: 'vert',
-        captions: ['jaune', 'vert'],
+        defaultCaption: 'BoneSag/Articulations.csv',
+        captions: [
+          {
+            title: 'Articulations',
+            file: 'BoneSag/Articulations.csv',
+          },
+          {
+            title: 'Cartilage',
+            file: 'BoneSag/Cartilage.csv',
+          },
+          {
+            title: 'Os',
+            file: 'BoneSag/Os.csv',
+          },
+          {
+            title: 'OsSag',
+            file: 'BoneSag/OsSag.csv',
+          },
+        ],
       },
     ]
 
