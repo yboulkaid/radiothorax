@@ -13,13 +13,13 @@ class DetailedSlice extends Component {
           <LabelSet
             frame={this.props.frame}
             color='red'
-            fileName='VertebresAxial.fcsv.csv'
+            fileName='boneCoro/Os.csv'
             visible={this.props.captionSet === 'set1'}
           />
           <LabelSet
             frame={this.props.frame}
             color='yellow'
-            fileName='organes2.csv'
+            fileName='VertebresAxial.fcsv.csv'
             visible={this.props.captionSet === 'set2'}
           />
         </div>

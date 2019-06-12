@@ -14,9 +14,8 @@ class LabelSet extends Component {
     this.getOrgansLabels()
   }
 
-  isVisibleFor (frameStart, frameEnd) {
-    frameEnd += 1 // Because of weird data input?
-    return this.props.visible && this.props.frame >= frameStart && this.props.frame <= frameEnd
+  isVisibleFor (frame) {
+    return this.props.visible && this.props.frame === parseFloat(frame)
   }
 
   getOrgansLabels() {
@@ -32,7 +31,7 @@ class LabelSet extends Component {
     let scaleFactor = 2
     let scaledX = Math.round(organ.x / scaleFactor)
     let scaledY = Math.round(organ.y / scaleFactor)
-    if (this.isVisibleFor(organ.frameStart, organ.frameEnd)) {
+    if (this.isVisibleFor(organ.Frame)) {
       return (
         <Label
           key={organ.label}
@@ -47,7 +46,6 @@ class LabelSet extends Component {
   }
 
   render () {
-    console.log(this.state.organs)
     return this.state.organs.map(
       (organ) => this.organToLabel(organ)
     )
