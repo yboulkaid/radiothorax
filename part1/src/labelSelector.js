@@ -30,7 +30,7 @@ class LabelSelector extends Component {
     )
 
     return (
-      <RadioGroup name='captionSet' selectedValue={this.state.selectedValue} onChange={this.handleChange}>
+      <RadioGroup name={Math.floor(Math.random()*1000)} selectedValue={this.state.selectedValue} onChange={this.handleChange}>
         {optionRadios}
       </RadioGroup>
     )

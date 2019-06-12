@@ -6,14 +6,14 @@ import LabelSelector from './labelSelector.js'
 import './viewer.css'
 
 class Viewer extends Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.setFrame = this.setFrame.bind(this)
     this.setCaption = this.setCaption.bind(this)
     this.state = {
       frame: 0,
       totalFrames: 70,
-      caption: 'rouge'
+      caption: this.props.defaultCaption
     }
   }
 
@@ -72,7 +72,7 @@ class Viewer extends Component {
 
         <div className='App-footer'>
           <MainSlider frame={this.state.frame} totalFrames={this.state.totalFrames} setFrameHandler={this.setFrame} />
-          <LabelSelector selectedValue='rouge' setCaptionHandler={this.setCaption} options={['rouge', 'bleu']}/>
+          <LabelSelector selectedValue='rouge' setCaptionHandler={this.setCaption} options={this.props.captions}/>
         </div>
       </div>
     )

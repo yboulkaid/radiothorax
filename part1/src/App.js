@@ -11,9 +11,9 @@ class App extends Component {
           <h2>Visionneuse de radioanatomie</h2>
         </div>
 
-        <Viewer imageSet='BoneAxial' title='BoneAxial'/>
-        <Viewer imageSet='BoneCoronal' title='BoneCoronal'/>
-        <Viewer imageSet='BoneSagittal' title='BoneSagittal'/>
+        <Viewer imageSet='BoneAxial' title='BoneAxial' defaultCaption='rouge' captions={['vert', 'bleu']}/>
+        <Viewer imageSet='BoneCoronal' title='BoneCoronal' defaultCaption='bleu' captions={['jaune', 'rouge']}/>
+        <Viewer imageSet='BoneSagittal' title='BoneSagittal' defaultCaption='rouge' captions={['bleu', 'rouge']}/>
 
       </div>
     )
