@@ -22,10 +22,10 @@ class LabelSelector extends Component {
   render () {
     const optionRadios = this.props.options.map(
       (option) => (
-        <div>
+        <span>
           <Radio value={option.file} />
           <label> {option.title} </label>
-        </div>
+        </span>
       )
     )
 
