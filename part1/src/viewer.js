@@ -67,12 +67,12 @@ class Viewer extends Component {
 
         <div className='App-detailed-slice'>
           <h2> {this.props.title} </h2>
-          <DetailedSlice frame={this.state.frame} captionSet={this.state.caption} imageSet={this.props.imageSet}/>
+          <DetailedSlice frame={this.state.frame} captionSet={this.state.caption} imageSet={this.props.imageSet} labelFiles={this.props.captions.map((caption) => caption.file)}/>
         </div>
 
         <div className='App-footer'>
           <MainSlider frame={this.state.frame} totalFrames={this.state.totalFrames} setFrameHandler={this.setFrame} />
-          <LabelSelector selectedValue={this.props.defaultCaption} setCaptionHandler={this.setCaption} options={this.props.captions}/>
+          <LabelSelector selectedValue={this.props.defaultCaption} setCaptionHandler={this.setCaption} options={this.props.captions.map((caption) => caption.title)}/>
         </div>
       </div>
     )

@@ -7,22 +7,39 @@ class App extends Component {
   render () {
     const dataSet = [
       {
-        imageSet: 'BoneAxial',
-        title: 'BoneAxial',
-        defaultCaption: 'bleu',
-        captions: ['vert', 'bleu']
-      },
-      {
         imageSet: 'BoneCoronal',
         title: 'BoneCoronal',
+        defaultCaption: 'Articulations',
+        captions: [
+          {
+            title: 'Articulations',
+            file: 'BoneCoro/Articulations.csv',
+          },
+          {
+            title: 'Cartillage',
+            file: 'BoneCoro/Cartillage.csv',
+          },
+          {
+            title: 'Os',
+            file: 'BoneCoro/Os.csv',
+          },
+          {
+            title: 'OsCoro',
+            file: 'BoneCoro/OsCoro.csv',
+          },
+        ],
+      },
+      {
+        imageSet: 'BoneAxial',
+        title: 'BoneAxial',
+        captions: ['vert', 'bleu'],
         defaultCaption: 'bleu',
-        captions: ['jaune', 'bleu']
       },
       {
         imageSet: 'BoneSagittal',
         title: 'BoneSagittal',
         defaultCaption: 'vert',
-        captions: ['jaune', 'vert']
+        captions: ['jaune', 'vert'],
       },
     ]
 
