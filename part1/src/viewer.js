@@ -13,7 +13,7 @@ class Viewer extends Component {
     this.state = {
       frame: 0,
       totalFrames: 70,
-      caption: 'set1'
+      caption: 'rouge'
     }
   }
 
@@ -72,7 +72,7 @@ class Viewer extends Component {
 
         <div className='App-footer'>
           <MainSlider frame={this.state.frame} totalFrames={this.state.totalFrames} setFrameHandler={this.setFrame} />
-          <LabelSelector selectedValue='orange' setCaptionHandler={this.setCaption}/>
+          <LabelSelector selectedValue='rouge' setCaptionHandler={this.setCaption} options={['rouge', 'bleu']}/>
         </div>
       </div>
     )

@@ -6,7 +6,7 @@ class LabelSelector extends Component {
     super()
     this.handleChange = this.handleChange.bind(this)
     this.state = {
-      selectedValue: 'set1'
+      selectedValue: 'rouge'
     }
   }
 
@@ -20,10 +20,18 @@ class LabelSelector extends Component {
   }
 
   render () {
+    const optionRadios = this.props.options.map(
+      (option) => (
+        <div>
+          <Radio value={option} />
+          <label> {option} </label>
+        </div>
+      )
+    )
+
     return (
       <RadioGroup name='captionSet' selectedValue={this.state.selectedValue} onChange={this.handleChange}>
-        <Radio value='set1' /> Legende 1
-        <Radio value='set2' /> Legende 2
+        {optionRadios}
       </RadioGroup>
     )
   }
