@@ -7,26 +7,6 @@ class App extends Component {
   render () {
     const dataSet = [
       {
-        imageSet: 'BoneCoronal',
-        title: 'BoneCoronal',
-        defaultCaption: 'BoneCoro/Articulations.csv',
-        captions: [
-          {
-            title: 'Articulations',
-            file: 'BoneCoro/Articulations.csv',
-          },
-          {
-            title: 'Cartillage',
-            file: 'BoneCoro/Cartillage.csv',
-          },
-          {
-            title: 'Os',
-            file: 'BoneCoro/Os.csv',
-          },
-        ],
-        sliderOrientations: ['vertical', 'horizontal'],
-      },
-      {
         imageSet: 'BoneAxial',
         title: 'BoneAxial',
         defaultCaption: 'BoneAx/Articulations.csv',
@@ -45,6 +25,26 @@ class App extends Component {
           },
         ],
         sliderOrientations: ['vertical', 'vertical'],
+      },
+      {
+        imageSet: 'BoneCoronal',
+        title: 'BoneCoronal',
+        defaultCaption: 'BoneCoro/Articulations.csv',
+        captions: [
+          {
+            title: 'Articulations',
+            file: 'BoneCoro/Articulations.csv',
+          },
+          {
+            title: 'Cartillage',
+            file: 'BoneCoro/Cartillage.csv',
+          },
+          {
+            title: 'Os',
+            file: 'BoneCoro/Os.csv',
+          },
+        ],
+        sliderOrientations: ['vertical', 'horizontal'],
       },
       {
         imageSet: 'BoneSagittal',
