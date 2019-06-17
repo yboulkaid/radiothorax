@@ -12,11 +12,18 @@
   padding: 10px;
 }
 
-/* .label__dot:hover + .label__caption { */
-/*   display: block; */
-/* } */
-.label__dot + .label__caption {
+.label__dot:hover + .label__caption {
   display: inline;
-  /* margin-left: 5px; */
   color: #fedddd;
 }
+
+.label__dot {
+  background: rgba(0,0,0,0.6);
+  font-weight: bold;
+  border-radius: 10px;
+  color: #ff2233;
+}
+/* .label__dot + .label__caption { */
+/*   display: inline; */
+/*   color: #fedddd; */
+/* } */
