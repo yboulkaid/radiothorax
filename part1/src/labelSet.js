@@ -31,12 +31,16 @@ class LabelSet extends Component {
     let scaleFactor = 2
     let scaledX = Math.round(organ.x / scaleFactor)
     let scaledY = Math.round(organ.y / scaleFactor)
+    let offsetX = 0;
+    let offsetY = -30;
+    let computedX = scaledX + offsetX;
+    let computedY = scaledY + offsetY;
     if (this.isVisibleFor(organ.Frame)) {
       return (
         <Label
           key={organ.label}
-          from={{x: scaledX, y: scaledY}}
-          to={{x: scaledX, y: scaledY}}
+          from={{x: computedX, y: computedY}}
+          to={{x: computedX, y: computedY}}
           text={organ.label}
           color={this.props.color}/>
       )
