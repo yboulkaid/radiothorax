@@ -9,7 +9,12 @@ class Label extends Component {
     };
     return (
       <div className='label' style={styles}>
-        {this.props.text}
+        <span className='label__dot'>
+          x
+        </span>
+        <span className='label__caption'>
+          {this.props.text}
+        </span>
       </div>
     );
   }

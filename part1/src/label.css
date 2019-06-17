@@ -1,6 +1,22 @@
 .label {
+  text-align: left;
+  cursor: pointer;
   position: absolute;
   color: white;
-  cursor: pointer;
+}
+
+.label__caption {
   text-decoration: underline;
+  display: none;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+}
+
+/* .label__dot:hover + .label__caption { */
+/*   display: block; */
+/* } */
+.label__dot + .label__caption {
+  display: inline;
+  /* margin-left: 5px; */
+  color: #fedddd;
 }
