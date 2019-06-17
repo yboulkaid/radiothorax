@@ -23,10 +23,6 @@ class App extends Component {
             title: 'Os',
             file: 'BoneCoro/Os.csv',
           },
-          {
-            title: 'OsCoro',
-            file: 'BoneCoro/OsCoro.csv',
-          },
         ],
         sliderOrientations: ['vertical', 'horizontal'],
       },
@@ -66,10 +62,6 @@ class App extends Component {
           {
             title: 'Os',
             file: 'BoneSag/Os.csv',
-          },
-          {
-            title: 'OsSag',
-            file: 'BoneSag/OsSag.csv',
           },
         ],
         sliderOrientations: ['horizontal', 'horizontal'],
