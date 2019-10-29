@@ -5,7 +5,7 @@
   "homepage": "http://anathorad.s3-website-eu-west-1.amazonaws.com/",
   "dependencies": {
     "csv": "^3.1.0",
-    "csv-parse": "^3.0.0",
+    "csv-parse": "^4.4.6",
     "rc-slider": "^8.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
